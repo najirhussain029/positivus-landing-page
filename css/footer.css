@@ -38,14 +38,14 @@ footer.container {
   height: 28px;
   place-items: center;
   border-radius: 50%;
-  background: var(--white);
+  background: var(--button-blue);
   color: var(--dark);
   font-size: 13px;
   font-weight: 700;
 }
 
 .social a:hover {
-  background: var(--green);
+  background: var(--button-blue-hover);
 }
 
 .f-mid {

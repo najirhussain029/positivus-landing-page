@@ -48,7 +48,7 @@
   flex: 0 0 auto;
   border: 1px solid var(--dark);
   border-radius: 50%;
-  background: var(--gray);
+  background: var(--button-blue);
 }
 
 .pm::before,

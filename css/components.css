@@ -7,35 +7,41 @@
   padding: 16px 30px;
   border: 1px solid var(--dark);
   border-radius: 14px;
+  background: var(--button-blue);
   cursor: pointer;
+  color: var(--dark);
   font-size: 18px;
   text-align: center;
   transition: background-color 160ms ease, color 160ms ease;
 }
 
 .btn-dark {
-  background: var(--dark);
-  color: var(--white);
+  background: var(--button-blue);
+  color: var(--dark);
 }
 
 .btn-dark:hover {
-  background: var(--green);
+  background: var(--button-blue-hover);
   color: var(--dark);
 }
 
 .btn-outline {
-  background: var(--white);
+  background: var(--button-blue);
 }
 
 .btn-outline:hover {
-  background: var(--dark);
-  color: var(--white);
+  background: var(--button-blue-hover);
+  color: var(--dark);
 }
 
 .btn-green {
-  border-color: var(--green);
-  background: var(--green);
+  border-color: var(--dark);
+  background: var(--button-blue);
   color: var(--dark);
+}
+
+.btn-green:hover {
+  background: var(--button-blue-hover);
 }
 
 .btn.full {
