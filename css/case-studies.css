@@ -1,0 +1,35 @@
+/* 11. Case studies */
+.cases {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 65px 55px;
+  border-radius: 44px;
+  background: var(--dark);
+  color: var(--white);
+}
+
+.cases > div {
+  padding: 0 35px;
+  border-right: 1px solid var(--white);
+}
+
+.cases > div:first-child {
+  padding-left: 0;
+}
+
+.cases > div:last-child {
+  padding-right: 0;
+  border: 0;
+}
+
+.cases p {
+  margin-bottom: 18px;
+}
+
+.link-g {
+  color: var(--green);
+}
+
+.link-g:hover {
+  text-decoration: underline;
+}

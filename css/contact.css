@@ -1,0 +1,71 @@
+/* 15. Contact form */
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(200px, 0.9fr);
+  align-items: center;
+  gap: 45px;
+  overflow: hidden;
+  padding: 55px 70px;
+  border-radius: 42px;
+  background: var(--gray);
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.radios {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 5px;
+}
+
+.radios label {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.radios input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green);
+}
+
+.contact form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 15px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea,
+.sub input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 1px solid var(--dark);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.contact textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus,
+.sub input:focus {
+  outline: 2px solid #83b949;
+  outline-offset: 2px;
+}
+
+.contact-art {
+  width: min(100%, 300px);
+  justify-self: end;
+}

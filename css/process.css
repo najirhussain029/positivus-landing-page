@@ -1,0 +1,88 @@
+/* 12. Working process accordion */
+.acc {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.acc-item {
+  padding: 26px 40px;
+  border: 1px solid var(--dark);
+  border-radius: 34px;
+  background: var(--gray);
+  box-shadow: var(--shadow);
+  transition: background-color 180ms ease;
+}
+
+.acc-item.active {
+  background: var(--green);
+}
+
+.acc-head {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 24px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-align: left;
+}
+
+.acc-head b {
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.acc-head h3 {
+  flex: 1;
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.pm {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  border: 1px solid var(--dark);
+  border-radius: 50%;
+  background: var(--gray);
+}
+
+.pm::before,
+.pm::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: var(--dark);
+  content: "";
+  transform: translate(-50%, -50%);
+}
+
+.pm::before {
+  width: 18px;
+  height: 2px;
+}
+
+.pm::after {
+  width: 2px;
+  height: 18px;
+}
+
+.acc-item.active .pm::after {
+  display: none;
+}
+
+.acc-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 350ms ease;
+}
+
+.acc-body p {
+  margin-top: 22px;
+  padding-top: 20px;
+  border-top: 1px solid var(--dark);
+}

@@ -1,0 +1,54 @@
+/* 8. Hero and client logos */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 50px;
+  margin-top: 35px;
+}
+
+.hero h1 {
+  max-width: 590px;
+  margin-bottom: 28px;
+  font-size: clamp(44px, 5vw, 64px);
+  font-weight: 500;
+  letter-spacing: -2px;
+  line-height: 1.08;
+}
+
+.hero p {
+  max-width: 500px;
+  margin-bottom: 28px;
+  font-size: 18px;
+}
+
+.hero-img {
+  display: flex;
+  min-height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img img {
+  width: min(100%, 520px);
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 45px;
+  color: #55565c;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logos span:nth-child(2) {
+  font-family: Georgia, serif;
+  font-style: italic;
+}
+
+.logos span:nth-child(4) {
+  color: #191a23;
+}

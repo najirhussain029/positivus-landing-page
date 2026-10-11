@@ -1,0 +1,57 @@
+/* 7. Header and navigation */
+.header {
+  position: relative;
+  z-index: 5;
+  background: var(--white);
+}
+
+.nav {
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+  white-space: nowrap;
+}
+
+.logo-mark {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+
+.menu > a:not(.btn):hover,
+.f-top nav a:hover {
+  color: #638d34;
+}
+
+.menu .btn {
+  min-height: 54px;
+  padding: 12px 24px;
+  white-space: nowrap;
+}
+
+.burger {
+  display: none;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--dark);
+  border-radius: 10px;
+  background: var(--white);
+  cursor: pointer;
+  font-size: 24px;
+}
