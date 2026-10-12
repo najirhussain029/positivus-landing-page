@@ -26,11 +26,11 @@
 }
 
 .btn-outline {
-  background: var(--button-blue);
+  background: var(--white);
 }
 
 .btn-outline:hover {
-  background: var(--button-blue-hover);
+  background: var(--gray);
   color: var(--dark);
 }
 
