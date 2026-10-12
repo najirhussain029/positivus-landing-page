@@ -1,4 +1,8 @@
 /* 13. Team cards */
+#team .tag {
+  background: #d4b8ff;
+}
+
 .grid-3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -33,7 +37,7 @@
   width: 74px;
   height: 74px;
   flex: 0 0 auto;
-  border: 2px solid var(--green);
+  border: 2px solid #d4b8ff;
   border-radius: 50%;
   object-fit: cover;
 }
