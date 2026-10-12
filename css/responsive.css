@@ -4,17 +4,47 @@
     min-height: 86px;
   }
 
+  .burger {
+    display: inline-grid;
+    place-items: center;
+  }
+
   .menu {
-    gap: 18px;
+    position: absolute;
+    top: calc(100% - 2px);
+    right: max(20px, calc((100vw - 560px) / 2));
+    left: auto;
+    display: none;
+    width: min(560px, calc(100vw - 40px));
+    align-items: stretch;
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 20px 20px;
+    border: 1px solid var(--dark);
+    border-radius: 0 0 18px 18px;
+    background: var(--white);
+    box-shadow: 0 8px 15px #191a231a;
+  }
+
+  .menu.open {
+    display: flex;
+  }
+
+  .menu > a:not(.btn) {
+    padding: 12px 4px;
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .menu .btn {
-    padding-inline: 16px;
-    font-size: 16px;
+    margin-top: 16px;
   }
 
   .hero {
     gap: 24px;
+  }
+
+  .hero h1 {
+    font-size: clamp(40px, 5.5vw, 54px);
   }
 
   .hero-img {
@@ -33,18 +63,33 @@
   }
 
   .contact {
-    padding-inline: 45px;
+    gap: 28px;
+    padding: 40px 32px;
   }
 
   .cases {
-    padding-inline: 35px;
+    padding: 45px 30px;
   }
 
   .cases > div {
-    padding-inline: 22px;
+    padding-inline: 18px;
+  }
+
+  .title-row {
+    gap: 24px;
+  }
+
+  .tag {
+    white-space: normal;
+  }
+
+  .f-top {
+    flex-wrap: wrap;
   }
 
   .f-top nav {
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
   }
 }
@@ -67,38 +112,10 @@
     font-size: 25px;
   }
 
-  .burger {
-    display: inline-grid;
-    place-items: center;
-  }
-
   .menu {
-    position: absolute;
-    top: calc(100% - 2px);
     right: 16px;
     left: 16px;
-    display: none;
-    align-items: stretch;
-    flex-direction: column;
-    gap: 0;
-    padding: 12px 20px 20px;
-    border: 1px solid var(--dark);
-    border-radius: 0 0 18px 18px;
-    background: var(--white);
-    box-shadow: 0 8px 15px #191a231a;
-  }
-
-  .menu.open {
-    display: flex;
-  }
-
-  .menu > a:not(.btn) {
-    padding: 12px 4px;
-    border-bottom: 1px solid #e5e5e5;
-  }
-
-  .menu .btn {
-    margin-top: 16px;
+    width: auto;
   }
 
   .hero {
@@ -163,12 +180,13 @@
 
   .card h3 {
     font-size: 23px;
+    max-width: 62%;
   }
 
   .card .art {
     right: 20px;
-    width: 39%;
-    max-width: 145px;
+    width: 34%;
+    max-width: 120px;
   }
 
   .learn {
@@ -355,6 +373,62 @@
 
   .right {
     text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .hero h1 {
+    font-size: 39px;
+    letter-spacing: -1.5px;
+  }
+
+  .tag {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+
+  .acc-item {
+    padding: 18px 16px;
+  }
+
+  .acc-head {
+    gap: 10px;
+  }
+
+  .acc-head b {
+    font-size: 32px;
+  }
+
+  .acc-head h3 {
+    font-size: 16px;
+  }
+
+  .member {
+    padding: 20px;
+  }
+
+  .slide {
+    padding-inline: 12px;
+  }
+
+  .slide blockquote {
+    padding: 22px 16px;
+    font-size: 15px;
+  }
+
+  .footer {
+    padding-inline: 18px;
+  }
+
+  .sub {
+    padding: 18px;
   }
 }
 
