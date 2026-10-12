@@ -3,7 +3,7 @@
   overflow: hidden;
   padding: 65px 0 35px;
   border-radius: 44px;
-  background: var(--dark);
+  background: var(--gray);
   color: var(--white);
 }
 
@@ -38,7 +38,7 @@
   height: 27px;
   border-right: 1px solid var(--green);
   border-bottom: 1px solid var(--green);
-  background: var(--dark);
+  background: var(--gray);
   content: "";
   transform: rotate(45deg);
 }

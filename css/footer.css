@@ -6,7 +6,7 @@ footer.container {
 .footer {
   padding: 52px 60px 38px;
   border-radius: 42px 42px 0 0;
-  background: var(--dark);
+  background: var(--gray);
   color: var(--white);
 }
 
@@ -74,7 +74,7 @@ footer.container {
   max-width: 590px;
   padding: 35px;
   border-radius: 14px;
-  background: #292a32;
+  background: var(--dark);
 }
 
 .sub input {

@@ -50,7 +50,8 @@
   padding: 15px 20px;
   border: 1px solid var(--dark);
   border-radius: 12px;
-  background: var(--white);
+  background: var(--dark);
+  color: var(--white);
 }
 
 .contact textarea {
