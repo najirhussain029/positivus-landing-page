@@ -22,8 +22,8 @@
     padding: 12px 20px 20px;
     border: 1px solid var(--dark);
     border-radius: 0 0 18px 18px;
-    background: var(--gray);
-    box-shadow: 0 8px 15px #00000040;
+    background: var(--white);
+    box-shadow: 0 8px 15px #191a231a;
   }
 
   .menu.open {
@@ -32,7 +32,7 @@
 
   .menu > a:not(.btn) {
     padding: 12px 4px;
-    border-bottom: 1px solid #f4f4f526;
+    border-bottom: 1px solid #e5e5e5;
   }
 
   .menu .btn {

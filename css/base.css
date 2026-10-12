@@ -3,10 +3,10 @@
   --green: #b9ff66;
   --button-blue: #a8d8ff;
   --button-blue-hover: #8bc9f5;
-  --dark: #121212;
-  --gray: #1a1d20;
-  --white: #f4f4f5;
-  --border: #1a1d20;
+  --dark: #191a23;
+  --gray: #f3f3f3;
+  --white: #ffffff;
+  --border: #191a23;
   --shadow: 0 5px 0 var(--dark);
   --font: "Space Grotesk", sans-serif;
 }
@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  background: var(--dark);
-  color: var(--white);
+  background: var(--white);
+  color: var(--dark);
   font-family: var(--font);
   line-height: 1.5;
 }

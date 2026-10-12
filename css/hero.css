@@ -39,7 +39,7 @@
   justify-content: space-between;
   gap: 25px;
   margin-top: 45px;
-  color: #b8bbc2;
+  color: #55565c;
   font-size: 25px;
   font-weight: 700;
 }
@@ -50,5 +50,5 @@
 }
 
 .logos span:nth-child(4) {
-  color: var(--white);
+  color: #191a23;
 }

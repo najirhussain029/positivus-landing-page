@@ -2,7 +2,7 @@
 .header {
   position: relative;
   z-index: 5;
-  background: var(--dark);
+  background: var(--white);
 }
 
 .nav {
@@ -17,6 +17,9 @@
   display: inline-flex;
   align-items: center;
   gap: 7px;
+  padding: 2px 8px 2px 0;
+  background: #121212;
+  color: #ffffff;
   font-size: 28px;
   font-weight: 700;
   letter-spacing: -1.5px;
@@ -24,6 +27,13 @@
 }
 
 .logo-mark {
+  display: grid;
+  width: 30px;
+  height: 32px;
+  flex: 0 0 30px;
+  place-items: center;
+  background: #073bc5;
+  color: #ffffff;
   font-size: 32px;
   line-height: 1;
 }
