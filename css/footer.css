@@ -42,16 +42,26 @@ footer.container {
   height: 28px;
   place-items: center;
   border-radius: 50%;
-  background: #ffd93d;
-  color: #191a23;
+  background: #0a66c2;
+  color: #ffffff;
   font-size: 13px;
   font-weight: 700;
   transition: transform 200ms ease, filter 200ms ease;
 }
 
+.social a:nth-child(2) {
+  background: #1877f2;
+}
+
+.social a:nth-child(3) {
+  background: #ffffff;
+  color: #191a23;
+}
+
 .social a:hover {
   filter: brightness(1.15);
   transform: scale(1.15);
+  cursor: pointer;
 }
 
 .f-mid {
