@@ -50,16 +50,15 @@ Serving the page over HTTP is recommended because the JavaScript files use ES mo
 
 `style.css` and `script.js` are the entry files. They load the corresponding section styles and JavaScript modules.
 
-## Deploy to GitHub Pages
+## Live Demo
 
-The included GitHub Actions workflow deploys the static site when changes are pushed to `main`.
+https://positivus-landing-page-orcin.vercel.app/
 
-1. Open the repository's **Settings → Pages**.
-2. Set the build and deployment source to **GitHub Actions**.
-3. Push a change to `main` or manually run the **Deploy to GitHub Pages** workflow from the **Actions** tab.
+## Deployment
 
-After the first successful deployment, GitHub Pages will show the published site URL in **Settings → Pages**.
+The site is deployed on Vercel and connected to this GitHub repository. Every push to the `main` branch automatically triggers a new deployment. No build step is required because the project is plain HTML, CSS, and JavaScript.
 
 ## Notes
 
-The contact and newsletter forms are front-end demos. They show a confirmation message but do not send or store submissions.
+- The contact and newsletter forms are front-end demos. They show a confirmation message but do not send or store submissions.
+- Design reference: Positivus landing page (Figma), built as a practice task.
