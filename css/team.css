@@ -57,6 +57,11 @@
   font-weight: 700;
 }
 
+.member .in {
+  background: #0a66c2;
+  color: #ffffff;
+}
+
 .member > p {
   font-size: 15px;
 }
