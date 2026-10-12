@@ -27,6 +27,10 @@ footer.container {
   text-underline-offset: 3px;
 }
 
+.f-top nav a:hover {
+  color: #ffd93d;
+}
+
 .social {
   display: flex;
   gap: 12px;
@@ -38,14 +42,16 @@ footer.container {
   height: 28px;
   place-items: center;
   border-radius: 50%;
-  background: var(--button-blue);
-  color: var(--dark);
+  background: #ffd93d;
+  color: #191a23;
   font-size: 13px;
   font-weight: 700;
+  transition: transform 200ms ease, filter 200ms ease;
 }
 
 .social a:hover {
-  background: var(--button-blue-hover);
+  filter: brightness(1.15);
+  transform: scale(1.15);
 }
 
 .f-mid {
@@ -62,8 +68,23 @@ footer.container {
 }
 
 .f-mid .tag {
+  background: #ffd93d;
   color: var(--dark);
   font-size: 20px;
+}
+
+.footer .btn-green,
+.sub .btn {
+  border-color: #ffd93d;
+  background: #ffd93d;
+  color: #191a23;
+  font-weight: 500;
+}
+
+.footer .btn-green:hover,
+.sub .btn:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 18px rgb(255 217 61 / 60%);
 }
 
 .sub {
@@ -75,6 +96,7 @@ footer.container {
   padding: 35px;
   border-radius: 14px;
   background: #292a32;
+  box-shadow: 0 0 25px rgb(255 217 61 / 15%);
 }
 
 .sub input {
