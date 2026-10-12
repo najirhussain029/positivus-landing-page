@@ -24,8 +24,11 @@
 }
 
 .logo-mark {
-  font-size: 32px;
-  line-height: 1;
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
+  background: currentColor;
+  clip-path: polygon(50% 0, 62% 36%, 100% 50%, 62% 64%, 50% 100%, 38% 64%, 0 50%, 38% 36%);
 }
 
 .menu {
